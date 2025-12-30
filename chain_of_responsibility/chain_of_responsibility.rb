@@ -3,6 +3,26 @@
 # basically you want to setof things for someone but if its not available then next assign to someone else 
 # for example approvals first it will send to CEO but then he is not available then president it not available then manager like that...  
 
+# --------------------------------------------------
+# PROBLEM:
+#
+# A request can be handled by different objects,
+# but the client should not know which one will
+# handle it.
+#
+# Without this pattern:
+# - Client uses large if/else or case statements
+# - Logic becomes tightly coupled to handlers
+# - Adding new handlers requires modifying client code
+#
+# SOLUTION:
+#
+# The Chain of Responsibility pattern:
+# - Passes a request along a chain of handlers
+# - Each handler decides whether to process it
+# - Client is decoupled from the handling logic
+# --------------------------------------------------
+
 
 # Base Handler
 class Logger

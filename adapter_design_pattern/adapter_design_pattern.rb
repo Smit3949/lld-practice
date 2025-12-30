@@ -6,6 +6,27 @@
 # Example: Payment Gateway
 # =========================================
 
+# --------------------------------------------------
+# PROBLEM:
+#
+# An application expects an object with a specific
+# interface, but an existing or third-party class
+# provides a different (incompatible) interface.
+#
+# Without Adapter:
+# - Client code must be modified to handle differences
+# - Tight coupling to third-party code
+# - Hard to replace or extend integrations
+#
+# SOLUTION:
+#
+# The Adapter pattern:
+# - Converts one interface into another expected by the client
+# - Allows reuse of existing / third-party code
+# - Keeps client code unchanged
+# --------------------------------------------------
+
+
 # -----------------------------------------
 # TARGET INTERFACE
 # -----------------------------------------
